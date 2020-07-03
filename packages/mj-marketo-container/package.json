@@ -1,0 +1,23 @@
+{
+  "name": "mj-marketo-container",
+  "version": "0.0.0",
+  "description": "A custom mjml component that wraps children in a marketo container.",
+  "keywords": [
+    "mjml",
+    "marketo"
+  ],
+  "author": "Armon Raphiel <araphiel@gmail.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "lib/mj-marketo-container.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
