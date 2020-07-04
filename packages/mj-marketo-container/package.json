@@ -18,13 +18,15 @@
     "lib"
   ],
   "scripts": {
-    "build": "babel src --out-dir lib"
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib"
   },
   "dependencies": {
     "mjml-core": "^4.6.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
-    "@babel/core": "^7.10.4"
+    "@babel/core": "^7.10.4",
+    "rimraf": "^3.0.2"
   }
 }
