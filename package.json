@@ -2,6 +2,9 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "lerna": "^3.22.1",
+    "rimraf": "^3.0.2"
   }
 }
