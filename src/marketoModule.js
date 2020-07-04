@@ -1,4 +1,11 @@
 import { BodyComponent } from 'mjml-core'
+import { registerDependencies } from 'mjml-validator'
+
+registerDependencies({
+    'mj-marketo-container': ['mj-marketo-module'],
+    'mj-marketo-module': ['mj-section'],
+})
+
 export default class MjMarketoModule extends BodyComponent {
     render() {
         return `
