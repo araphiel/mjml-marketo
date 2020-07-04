@@ -1,7 +1,7 @@
 import { BodyComponent } from 'mjml-core'
 
 export default class MjMarketoContainer extends BodyComponent {
-    static endingTag = true
+    // static endingTag = true
 
     render() {
         return `
