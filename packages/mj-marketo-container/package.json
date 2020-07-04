@@ -1,6 +1,6 @@
 {
   "name": "mj-marketo-container",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A custom mjml component that wraps children in a marketo container.",
   "keywords": [
     "mjml",
@@ -23,6 +23,5 @@
   },
   "dependencies": {
     "mjml-core": "^4.6.3"
-  },
-  "devDependencies": {}
+  }
 }
