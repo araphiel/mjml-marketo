@@ -1,6 +1,6 @@
 {
   "name": "root",
-  "private": true,
+  "private": false,
   "scripts": {
     "clean": "lerna exec -- rimraf lib",
     "build": "lerna exec -- babel src --out-dir lib --root-mode upward"
