@@ -7,6 +7,13 @@ registerDependencies({
 })
 
 export default class MjMarketoModule extends BodyComponent {
+    static allowedAttributes = {
+        'id': 'string',
+        'mktoName': 'string',
+        'mktoActive': 'string',
+        'mktoAddByDefault': 'string',
+    }
+
     render() {
         return `
             <tr 
