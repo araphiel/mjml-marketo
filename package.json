@@ -2,8 +2,8 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "clean:build": "lerna exec -- rimraf lib",
-    "build:all": "lerna exec -- babel src --out-dir lib --root-mode upward"
+    "clean": "lerna exec -- rimraf lib",
+    "build": "lerna exec -- babel src --out-dir lib --root-mode upward"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
