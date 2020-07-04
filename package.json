@@ -2,15 +2,18 @@
   "name": "root",
   "private": false,
   "scripts": {
-    "clean": "lerna exec -- rimraf lib",
-    "build": "lerna exec -- babel src --out-dir lib --root-mode upward"
+    "clean": "rimraf lib",
+    "build": "babel src --out-dir lib"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
-    "lerna": "^3.22.1",
     "rimraf": "^3.0.2"
+  },
+  "dependencies": {
+    "mjml-core": "^4.6.3",
+    "mjml-validator": "^4.6.3"
   }
 }
