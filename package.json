@@ -1,9 +1,15 @@
 {
-  "name": "root",
-  "private": false,
-  "scripts": {
-    "clean": "rimraf lib",
-    "build": "babel src --out-dir lib"
+  "name": "mjml-marketo",
+  "version": "1.0.0",
+  "description": "[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)",
+  "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "init": "^0.1.2",
+    "mjml-core": "^4.7.0-beta.1",
+    "mjml-validator": "^4.7.0-beta.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
@@ -12,8 +18,21 @@
     "@babel/preset-env": "^7.10.4",
     "rimraf": "^3.0.2"
   },
-  "dependencies": {
-    "mjml-core": "^4.6.3",
-    "mjml-validator": "^4.6.3"
-  }
+  "scripts": {
+    "build": "babel src --out-dir lib",
+    "clean": "rimraf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/araphiel/mjml-marketo.git"
+  },
+  "keywords": [
+    "mjml"
+  ],
+  "author": "Armon Raphiel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/araphiel/mjml-marketo/issues"
+  },
+  "homepage": "https://github.com/araphiel/mjml-marketo#readme"
 }
