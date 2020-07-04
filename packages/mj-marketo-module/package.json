@@ -18,7 +18,8 @@
     "url": "git+https://github.com/araphiel/mjml-marketo.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "build": "babel src --out-dir lib --root-mode upward",
+    "clean": "rimraf lib"
   },
   "bugs": {
     "url": "https://github.com/araphiel/mjml-marketo/issues"
