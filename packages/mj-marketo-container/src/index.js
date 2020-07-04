@@ -1,14 +1,18 @@
 import { BodyComponent } from 'mjml-core'
 
 export default class MjMarketoContainer extends BodyComponent {
-    // static endingTag = true
+    static endingTag = true
+
+    static allowedAttributes = {
+        'id': 'string',
+    }    
 
     render() {
         return `
             <table 
                 ${this.htmlAttributes({ 
                     'id': this.getAttribute('id'), 
-                    class: 'mktoContainer'
+                    'class': 'mktoContainer'
                 })}
             >
                 ${this.renderChildren()}
