@@ -22,6 +22,7 @@
     "clean": "rimraf lib"
   },
   "dependencies": {
-    "mjml-core": "^4.6.3"
+    "mjml-core": "^4.6.3",
+    "mjml-validator": "^4.6.3"
   }
 }
