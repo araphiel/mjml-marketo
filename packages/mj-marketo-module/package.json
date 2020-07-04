@@ -22,5 +22,8 @@
   },
   "bugs": {
     "url": "https://github.com/araphiel/mjml-marketo/issues"
+  },
+  "dependencies": {
+    "mjml-core": "^4.6.3"
   }
 }
