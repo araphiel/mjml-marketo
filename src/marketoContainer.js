@@ -3,7 +3,6 @@ import { registerDependencies } from 'mjml-validator'
 
 registerDependencies({
     'mj-marketo-container': ['mj-marketo-module'],
-    'mj-wrapper': ['mj-marketo-container'],
     'mj-body': ['mj-marketo-container'],
 })
 
