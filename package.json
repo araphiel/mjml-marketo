@@ -6,6 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "files": [
+    "lib/*"
+  ],
   "dependencies": {
     "mjml-core": "^4.6.3",
     "mjml-validator": "^4.6.3"
