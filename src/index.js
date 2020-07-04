@@ -1,7 +1,7 @@
 import MarketoContainer from './marketoContainer'
 import MarketoModule from './marketoModule'
 
-export default {
+export {
     MarketoContainer,
     MarketoModule
 }
