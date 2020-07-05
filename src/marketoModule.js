@@ -15,7 +15,7 @@ class MarketoModule extends BodyComponent {
     }
 
     render() {
-        return `
+        return this.renderMJML(`
             <tr 
                 ${this.htmlAttributes({ 
                     class: 'mktoModule',
@@ -25,9 +25,12 @@ class MarketoModule extends BodyComponent {
                     'mktoAddByDefault': this.getAttribute('mktoAddByDefault')
                 })}
             >
-                ${this.renderChildren()}
+                ${this.renderChildren(this.props.children, {
+                    rawXML: true,
+                    renderer: component => component.render,
+                })}
             </tr>
-            `
+            `)
     }
 }
 

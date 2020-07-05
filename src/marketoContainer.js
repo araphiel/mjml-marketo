@@ -13,19 +13,21 @@ class MarketoContainer extends BodyComponent {
     }    
 
     render() {
-        return `
-            <table 
-                ${this.htmlAttributes({ 
-                    'id': this.getAttribute('id'), 
-                    'class': 'mktoContainer'
-                })}
-            >
-                ${this.renderChildren(this.props.children, {
-                    rawXML: true,
-                    renderer: component => component.render,
-                })}
-            </table>
-            `
+        const attrs = this.htmlAttributes({ 
+            'id': this.getAttribute('id'), 
+            'class': 'mktoContainer'
+        })
+        
+        return this.renderMJML(`
+                <table>
+                    <tbody ${attrs}>
+                    ${this.renderChildren(this.props.children, {
+                        rawXML: true,
+                        renderer: component => component.render,
+                    })}
+                    </tbody>
+                </table>
+            `)
     }
 }
 
