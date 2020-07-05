@@ -1,10 +1,4 @@
 const { BodyComponent } = require('mjml-core')
-const { registerDependencies } = require('mjml-validator')
-
-registerDependencies({
-    'mj-marketo-container': ['marketo-module'],
-    'mj-body': ['marketo-container'],
-})
 
 class MarketoContainer extends BodyComponent {
 
@@ -13,18 +7,14 @@ class MarketoContainer extends BodyComponent {
     }    
 
     render() {
-        const attrs = this.htmlAttributes({ 
-            'id': this.getAttribute('id'), 
-            'class': 'mktoContainer'
-        })
-        
-        return this.renderMJML(`
-                <table>
-                    <tbody ${attrs}>
+        return `<table>
+                    <tbody ${this.htmlAttributes({ 
+                        'id': this.getAttribute('id'), 
+                        'class': 'mktoContainer'
+                    })}>
                         ${this.renderChildren()}
                     </tbody>
-                </table>
-            `)
+                </table>`
     }
 }
 
