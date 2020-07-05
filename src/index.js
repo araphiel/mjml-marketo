@@ -1,7 +1,7 @@
-import MarketoContainer from './marketoContainer'
-import MarketoModule from './marketoModule'
+const MarketoContainer = require('./marketoContainer')
+const MarketoModule = require('./marketoModule')
 
-export {
+module.exports = {
     MarketoContainer,
     MarketoModule
 }

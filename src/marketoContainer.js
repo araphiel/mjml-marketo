@@ -1,12 +1,12 @@
-import { BodyComponent } from 'mjml-core'
-import { registerDependencies } from 'mjml-validator'
+const { BodyComponent } = require('mjml-core')
+const { registerDependencies } = require('mjml-validator')
 
 registerDependencies({
-    'mj-marketo-container': ['mj-marketo-module'],
-    'mj-body': ['mj-marketo-container'],
+    'mj-marketo-container': ['marketo-module'],
+    'mj-body': ['marketo-container'],
 })
 
-export default class MjMarketoContainer extends BodyComponent {
+class MarketoContainer extends BodyComponent {
 
     static allowedAttributes = {
         'id': 'string',
@@ -28,3 +28,5 @@ export default class MjMarketoContainer extends BodyComponent {
             `
     }
 }
+
+module.exports = MarketoContainer
