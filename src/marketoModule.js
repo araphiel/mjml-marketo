@@ -23,7 +23,7 @@ class MarketoModule extends BodyComponent {
                 'mktoActive': this.getAttribute('mktoActive'),
                 'mktoAddByDefault': this.getAttribute('mktoAddByDefault')
             })}>
-                ${this.renderChildren()}
+                <td>${this.renderChildren()}</td>
             </tr>
             `
     }
