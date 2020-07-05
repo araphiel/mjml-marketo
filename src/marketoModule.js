@@ -1,4 +1,10 @@
 const { BodyComponent } = require('mjml-core')
+const { registerDependencies } = require('mjml-validator')
+
+registerDependencies({
+    'marketo-container': ['marketo-module'],
+    'marketo-module': ['mj-section'],
+})
 
 class MarketoModule extends BodyComponent {
     static allowedAttributes = {
