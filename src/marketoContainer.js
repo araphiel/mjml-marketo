@@ -21,10 +21,7 @@ class MarketoContainer extends BodyComponent {
         return this.renderMJML(`
                 <table>
                     <tbody ${attrs}>
-                    ${this.renderChildren(this.props.children, {
-                        rawXML: true,
-                        renderer: component => component.render,
-                    })}
+                        ${this.renderChildren()}
                     </tbody>
                 </table>
             `)

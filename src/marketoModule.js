@@ -15,20 +15,17 @@ class MarketoModule extends BodyComponent {
     }
 
     render() {
+        const attrs = this.htmlAttributes({ 
+            class: 'mktoModule',
+            'id': this.getAttribute('id'),
+            'mktoName': this.getAttribute('mktoName'),
+            'mktoActive': this.getAttribute('mktoActive'),
+            'mktoAddByDefault': this.getAttribute('mktoAddByDefault')
+        })
+
         return `
-            <tr 
-                ${this.htmlAttributes({ 
-                    class: 'mktoModule',
-                    'id': this.getAttribute('id'),
-                    'mktoName': this.getAttribute('mktoName'),
-                    'mktoActive': this.getAttribute('mktoActive'),
-                    'mktoAddByDefault': this.getAttribute('mktoAddByDefault')
-                })}
-            >
-                ${this.renderChildren(this.props.children, {
-                    rawXML: true,
-                    renderer: component => component.render,
-                })}
+            <tr ${attrs}>
+                ${this.renderChildren()}
             </tr>
             `
     }
