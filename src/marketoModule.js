@@ -15,7 +15,7 @@ class MarketoModule extends BodyComponent {
     }
 
     render() {
-        return this.renderMJML(`
+        return `
             <tr 
                 ${this.htmlAttributes({ 
                     class: 'mktoModule',
@@ -30,7 +30,7 @@ class MarketoModule extends BodyComponent {
                     renderer: component => component.render,
                 })}
             </tr>
-            `)
+            `
     }
 }
 
