@@ -1,6 +1,6 @@
 {
   "name": "mjml-marketo",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Components to help turn mjml emails into marketo templates.",
   "main": "lib/index.js",
   "directories": {
