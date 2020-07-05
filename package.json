@@ -1,6 +1,6 @@
 {
   "name": "mjml-marketo",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Components to help turn mjml emails into marketo templates.",
   "main": "lib/index.js",
   "directories": {
@@ -10,8 +10,9 @@
     "lib/*"
   ],
   "dependencies": {
-    "mjml-core": "^4.6.3",
-    "mjml-validator": "^4.6.3"
+    "mjml": "^4.7.0-beta.1",
+    "mjml-core": "^4.7.0-beta.1",
+    "mjml-validator": "^4.7.0-beta.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
