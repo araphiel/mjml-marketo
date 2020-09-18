@@ -4,7 +4,7 @@ Custom components needed to turn your MJML emails into editable Marketo template
 
 ## Usage
 
-```
+```javascript
 const mjml2html = require("mjml")
 const { registerComponent } = require('mjml-core');
 const { MarketoContainer, MarketoModule } = require('mjml-marketo');
